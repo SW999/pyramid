@@ -1,0 +1,64 @@
+////////////////////////////
+// Kit Default Variables
+////////////////////////////
+
+
+$icons-spacing: 20px;
+
+// Pick a reset or normalization
+// accepted values: 'meyer' (default), 'normalize', false
+// choose to reset header sizes (applies to 'normalize' only)
+$init-headers: false;
+$init-type: normalize;
+// use [Formalize](http://formalize.me/)
+$formalize: false;
+
+// pixel-normalize
+// [A List Apart](http://www.alistapart.com/articles/a-pixel-identity-crisis/)
+$pixel-normalize: false;
+
+// Font size and line-height
+$base-font-size: 16px;
+$base-line-height: $base-font-size * 1.5;
+
+// Modular Scale (used by 04-base)
+// values used to determine modular scale values
+// and http://modularscale.com/
+// $ratio: golden_ratio() major_third();
+// $base-size: $base-font-size;
+
+// Dimensions
+// basic values, independant of any css framework
+$kit-baseline: $base-line-height;
+$kit-baseline-half: $kit-baseline * 0.5;
+$kit-baseline-neg: $kit-baseline * -1;
+$kit-gutter: ms(2);
+$kit-gutter-half: $kit-gutter * 0.5;
+$kit-gutter-neg: $kit-gutter * -1;
+
+
+// use the Compass baseline system
+$establish-baseline: true;
+
+// Headers
+// create a list of header sizes, H1 - H6
+$set-header-sizes: true;
+$header-sizes: 37px 24px 20px 16px 1em 1em;
+// Use Compass's adjust-font-size-to function
+$adjust-font-size-to: false;
+// fancy apersands - for .amp within headers
+$header-ampersands: false;
+
+// Links
+// replace normal link underlines with bottom borders
+$border-links: false;
+// animate link hovers. use a 'time' value, like '0.5s'
+$link-transitions: false;
+
+// Forms
+$kit-form-defaults: true;
+
+// Grid Variables
+// note: set grid system-specific variables in the grid section (06)
+$show-grid: false;
+$show-baseline: false;
