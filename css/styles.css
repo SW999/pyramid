@@ -1,4 +1,4 @@
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby193\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-core-1\.0\.0\.alpha\.19\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\000035}}
+/* line 5, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,311 +20,239 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby193\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-core-1\.0\.0\.alpha\.19\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000322}}
+/* line 22, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby193\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-core-1\.0\.0\.alpha\.19\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000324}}
+/* line 24, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby193\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-core-1\.0\.0\.alpha\.19\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000326}}
+/* line 26, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby193\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-core-1\.0\.0\.alpha\.19\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000328}}
+/* line 28, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby193\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-core-1\.0\.0\.alpha\.19\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000330}}
+/* line 30, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby193\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-core-1\.0\.0\.alpha\.19\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003103}}
+/* line 103, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby193\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-core-1\.0\.0\.alpha\.19\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\0000332}}
+/* line 32, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Ruby193\/lib\/ruby\/gems\/1\.9\.1\/gems\/compass-core-1\.0\.0\.alpha\.19\/stylesheets\/compass\/reset\/_utilities\.scss}line{font-family:\00003116}}
+/* line 116, ../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
 /* ---------- */
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/temp\/Compass_template\/pyramid\/sass\/layout\/_basic\.scss}line{font-family:\0000385}}
+/* line 60, ../sass/layout/_basic.scss */
 .no-scroll {
   overflow: hidden;
-  background-color: lightgray;
+  background-color: cornsilk;
   font-size: 12px;
   font-size: 0.75rem;
 }
 
 @-webkit-keyframes radius-animation {
-  /* line 92, ../sass/layout/_basic.scss */
+  /* line 67, ../sass/layout/_basic.scss */
   0% {
     border-radius: 0%;
   }
 
-  /* line 95, ../sass/layout/_basic.scss */
+  /* line 70, ../sass/layout/_basic.scss */
   25% {
     background-color: Gold;
   }
 
-  /* line 98, ../sass/layout/_basic.scss */
+  /* line 73, ../sass/layout/_basic.scss */
   50% {
     border-radius: 25%;
   }
 
-  /* line 101, ../sass/layout/_basic.scss */
+  /* line 76, ../sass/layout/_basic.scss */
   75% {
     background-color: LimeGreen;
   }
 
-  /* line 104, ../sass/layout/_basic.scss */
+  /* line 79, ../sass/layout/_basic.scss */
   100% {
     border-radius: 0%;
   }
 }
 @-moz-keyframes radius-animation {
-  /* line 92, ../sass/layout/_basic.scss */
+  /* line 67, ../sass/layout/_basic.scss */
   0% {
     border-radius: 0%;
   }
 
-  /* line 95, ../sass/layout/_basic.scss */
+  /* line 70, ../sass/layout/_basic.scss */
   25% {
     background-color: Gold;
   }
 
-  /* line 98, ../sass/layout/_basic.scss */
+  /* line 73, ../sass/layout/_basic.scss */
   50% {
     border-radius: 25%;
   }
 
-  /* line 101, ../sass/layout/_basic.scss */
+  /* line 76, ../sass/layout/_basic.scss */
   75% {
     background-color: LimeGreen;
   }
 
-  /* line 104, ../sass/layout/_basic.scss */
+  /* line 79, ../sass/layout/_basic.scss */
   100% {
     border-radius: 0%;
   }
 }
 @-o-keyframes radius-animation {
-  /* line 92, ../sass/layout/_basic.scss */
+  /* line 67, ../sass/layout/_basic.scss */
   0% {
     border-radius: 0%;
   }
 
-  /* line 95, ../sass/layout/_basic.scss */
+  /* line 70, ../sass/layout/_basic.scss */
   25% {
     background-color: Gold;
   }
 
-  /* line 98, ../sass/layout/_basic.scss */
+  /* line 73, ../sass/layout/_basic.scss */
   50% {
     border-radius: 25%;
   }
 
-  /* line 101, ../sass/layout/_basic.scss */
+  /* line 76, ../sass/layout/_basic.scss */
   75% {
     background-color: LimeGreen;
   }
 
-  /* line 104, ../sass/layout/_basic.scss */
+  /* line 79, ../sass/layout/_basic.scss */
   100% {
     border-radius: 0%;
   }
 }
 @keyframes radius-animation {
-  /* line 92, ../sass/layout/_basic.scss */
+  /* line 67, ../sass/layout/_basic.scss */
   0% {
     border-radius: 0%;
   }
 
-  /* line 95, ../sass/layout/_basic.scss */
+  /* line 70, ../sass/layout/_basic.scss */
   25% {
     background-color: Gold;
   }
 
-  /* line 98, ../sass/layout/_basic.scss */
+  /* line 73, ../sass/layout/_basic.scss */
   50% {
     border-radius: 25%;
   }
 
-  /* line 101, ../sass/layout/_basic.scss */
+  /* line 76, ../sass/layout/_basic.scss */
   75% {
     background-color: LimeGreen;
   }
 
-  /* line 104, ../sass/layout/_basic.scss */
-  100% {
-    border-radius: 0%;
-  }
-}
-@-webkit-keyframes radius-animation {
-  /* line 110, ../sass/layout/_basic.scss */
-  0% {
-    border-radius: 0%;
-  }
-
-  /* line 113, ../sass/layout/_basic.scss */
-  25% {
-    background-color: Gold;
-  }
-
-  /* line 116, ../sass/layout/_basic.scss */
-  50% {
-    border-radius: 25%;
-  }
-
-  /* line 119, ../sass/layout/_basic.scss */
-  75% {
-    background-color: LimeGreen;
-  }
-
-  /* line 122, ../sass/layout/_basic.scss */
-  100% {
-    border-radius: 0%;
-  }
-}
-@-moz-keyframes radius-animation {
-  /* line 110, ../sass/layout/_basic.scss */
-  0% {
-    border-radius: 0%;
-  }
-
-  /* line 113, ../sass/layout/_basic.scss */
-  25% {
-    background-color: Gold;
-  }
-
-  /* line 116, ../sass/layout/_basic.scss */
-  50% {
-    border-radius: 25%;
-  }
-
-  /* line 119, ../sass/layout/_basic.scss */
-  75% {
-    background-color: LimeGreen;
-  }
-
-  /* line 122, ../sass/layout/_basic.scss */
-  100% {
-    border-radius: 0%;
-  }
-}
-@-o-keyframes radius-animation {
-  /* line 110, ../sass/layout/_basic.scss */
-  0% {
-    border-radius: 0%;
-  }
-
-  /* line 113, ../sass/layout/_basic.scss */
-  25% {
-    background-color: Gold;
-  }
-
-  /* line 116, ../sass/layout/_basic.scss */
-  50% {
-    border-radius: 25%;
-  }
-
-  /* line 119, ../sass/layout/_basic.scss */
-  75% {
-    background-color: LimeGreen;
-  }
-
-  /* line 122, ../sass/layout/_basic.scss */
-  100% {
-    border-radius: 0%;
-  }
-}
-@keyframes radius-animation {
-  /* line 110, ../sass/layout/_basic.scss */
-  0% {
-    border-radius: 0%;
-  }
-
-  /* line 113, ../sass/layout/_basic.scss */
-  25% {
-    background-color: Gold;
-  }
-
-  /* line 116, ../sass/layout/_basic.scss */
-  50% {
-    border-radius: 25%;
-  }
-
-  /* line 119, ../sass/layout/_basic.scss */
-  75% {
-    background-color: LimeGreen;
-  }
-
-  /* line 122, ../sass/layout/_basic.scss */
+  /* line 79, ../sass/layout/_basic.scss */
   100% {
     border-radius: 0%;
   }
 }
 @-webkit-keyframes infinite-spinning {
-  /* line 128, ../sass/layout/_basic.scss */
+  /* line 85, ../sass/layout/_basic.scss */
   from {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
     transform: rotateY(0deg);
   }
 
-  /* line 131, ../sass/layout/_basic.scss */
+  /* line 88, ../sass/layout/_basic.scss */
   to {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
   }
 }
 @-moz-keyframes infinite-spinning {
-  /* line 128, ../sass/layout/_basic.scss */
+  /* line 85, ../sass/layout/_basic.scss */
   from {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
     transform: rotateY(0deg);
   }
 
-  /* line 131, ../sass/layout/_basic.scss */
+  /* line 88, ../sass/layout/_basic.scss */
   to {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
   }
 }
 @-o-keyframes infinite-spinning {
-  /* line 128, ../sass/layout/_basic.scss */
+  /* line 85, ../sass/layout/_basic.scss */
   from {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
     transform: rotateY(0deg);
   }
 
-  /* line 131, ../sass/layout/_basic.scss */
+  /* line 88, ../sass/layout/_basic.scss */
   to {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
   }
 }
 @keyframes infinite-spinning {
-  /* line 128, ../sass/layout/_basic.scss */
+  /* line 85, ../sass/layout/_basic.scss */
   from {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
     transform: rotateY(0deg);
   }
 
-  /* line 131, ../sass/layout/_basic.scss */
+  /* line 88, ../sass/layout/_basic.scss */
   to {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
     transform: rotateY(180deg);
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/temp\/Compass_template\/pyramid\/sass\/layout\/_basic\.scss}line{font-family:\00003136}}
+/* line 93, ../sass/layout/_basic.scss */
 .scene {
   display: block;
   margin-left: auto;
@@ -339,7 +267,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   perspective: 600px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/temp\/Compass_template\/pyramid\/sass\/layout\/_basic\.scss}line{font-family:\00003143}}
+/* line 100, ../sass/layout/_basic.scss */
 .pyramid {
   position: relative;
   width: inherit;
@@ -349,12 +277,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -ms-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-animation: infinite-spinning 4s linear infinite;
-  -moz-animation: infinite-spinning 4s linear infinite;
-  animation: infinite-spinning 4s linear infinite;
+  -webkit-animation: infinite-spinning 4s linear infinite 0ms;
+  -moz-animation: infinite-spinning 4s linear infinite 0ms;
+  -o-animation: infinite-spinning 4s linear infinite 0ms;
+  animation: infinite-spinning 4s linear infinite 0ms;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/temp\/Compass_template\/pyramid\/sass\/layout\/_basic\.scss}line{font-family:\00003152}}
+/* line 107, ../sass/layout/_basic.scss */
 .pyramid div {
   position: absolute;
   top: 50%;
@@ -362,96 +291,104 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   opacity: .7;
   border: 2px solid silver;
   -webkit-transform: rotateX(90deg) translate3d(-50%, 0, -70px);
+  -moz-transform: rotateX(90deg) translate3d(-50%, 0, -70px);
+  -ms-transform: rotateX(90deg) translate3d(-50%, 0, -70px);
+  -o-transform: rotateX(90deg) translate3d(-50%, 0, -70px);
   transform: rotateX(90deg) translate3d(-50%, 0, -70px);
   -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-animation: radius-animation 9s linear infinite;
-  -moz-animation: radius-animation 9s linear infinite;
-  animation: radius-animation 9s linear infinite;
+  -webkit-animation: radius-animation 9s linear infinite 0ms;
+  -moz-animation: radius-animation 9s linear infinite 0ms;
+  -o-animation: radius-animation 9s linear infinite 0ms;
+  animation: radius-animation 9s linear infinite 0ms;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/temp\/Compass_template\/pyramid\/sass\/layout\/_basic\.scss}line{font-family:\00003167}}
+/* line 118, ../sass/layout/_basic.scss */
 .pyramid div:nth-child(1) {
   width: 90%;
   height: 90%;
   background-color: midnightblue;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/temp\/Compass_template\/pyramid\/sass\/layout\/_basic\.scss}line{font-family:\00003172}}
+/* line 123, ../sass/layout/_basic.scss */
 .pyramid div:nth-child(2) {
   width: 80%;
   height: 80%;
   background-color: navy;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/temp\/Compass_template\/pyramid\/sass\/layout\/_basic\.scss}line{font-family:\00003177}}
+/* line 128, ../sass/layout/_basic.scss */
 .pyramid div:nth-child(3) {
   width: 70%;
   height: 70%;
   background-color: darkblue;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/temp\/Compass_template\/pyramid\/sass\/layout\/_basic\.scss}line{font-family:\00003182}}
+/* line 133, ../sass/layout/_basic.scss */
 .pyramid div:nth-child(4) {
   width: 60%;
   height: 60%;
   background-color: mediumblue;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/temp\/Compass_template\/pyramid\/sass\/layout\/_basic\.scss}line{font-family:\00003187}}
+/* line 138, ../sass/layout/_basic.scss */
 .pyramid div:nth-child(5) {
   width: 50%;
   height: 50%;
   background-color: blue;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/temp\/Compass_template\/pyramid\/sass\/layout\/_basic\.scss}line{font-family:\00003192}}
+/* line 143, ../sass/layout/_basic.scss */
 .pyramid div:nth-child(6) {
   width: 40%;
   height: 40%;
   background-color: royalblue;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/temp\/Compass_template\/pyramid\/sass\/layout\/_basic\.scss}line{font-family:\00003197}}
+/* line 148, ../sass/layout/_basic.scss */
 .pyramid div:nth-child(7) {
   width: 30%;
   height: 30%;
   background-color: dodgerblue;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/temp\/Compass_template\/pyramid\/sass\/layout\/_basic\.scss}line{font-family:\00003202}}
+/* line 153, ../sass/layout/_basic.scss */
 .pyramid div:nth-child(8) {
   width: 20%;
   height: 20%;
   background-color: cornflowerblue;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/temp\/Compass_template\/pyramid\/sass\/layout\/_basic\.scss}line{font-family:\00003207}}
+/* line 158, ../sass/layout/_basic.scss */
 .pyramid div:nth-child(9) {
   width: 10%;
   height: 10%;
   background-color: deepskyblue;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/temp\/Compass_template\/pyramid\/sass\/layout\/_basic\.scss}line{font-family:\00003212}}
+/* line 163, ../sass/layout/_basic.scss */
 .pyramid div:nth-child(10) {
   width: 1%;
   height: 1%;
   background-color: lightskyblue;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/temp\/Compass_template\/pyramid\/sass\/layout\/_basic\.scss}line{font-family:\00003217}}
-.pyramid:hover,
-.pyramid:hover div {
-  -moz-animation-play-state: paused;
+/* line 169, ../sass/layout/_basic.scss */
+.pyramid:hover, .pyramid:hover div {
   -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -ms-animation-play-state: paused;
+  -o-animation-play-state: paused;
   animation-play-state: paused;
 }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/D\:\/temp\/Compass_template\/pyramid\/sass\/layout\/_basic\.scss}line{font-family:\00003223}}
-.pyramid:active,
-.pyramid:active div {
-  -moz-animation-direction: reverse;
+/* line 174, ../sass/layout/_basic.scss */
+.pyramid:active, .pyramid:active div {
   -webkit-animation-direction: reverse;
+  -moz-animation-direction: reverse;
+  -ms-animation-direction: reverse;
+  -o-animation-direction: reverse;
   animation-direction: reverse;
 }

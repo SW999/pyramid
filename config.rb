@@ -26,7 +26,7 @@ Sass::Plugin.options[:debug_info] = true
 
 # Pass options to sass. For development, we turn on the FireSass-compatible
 # debug_info if the debug config variable above is true.
-sass_options = (environment == :development && debug == true) ? {:debug_info => true} : {}
+#sass_options = (environment == :development && debug == true) ? {:debug_info => true} : {}
 
 # Add support for repeating gradients
 Compass::BrowserSupport.add_support("repeating-linear-gradient", "webkit", "moz", "ms")
