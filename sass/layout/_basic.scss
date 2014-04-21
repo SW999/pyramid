@@ -97,6 +97,7 @@ $plane-10: LightSkyBlue;
   margin-top:-250px;
   @include vendor(perspective, 600px);
 }
+
 .pyramid {
   position:relative;
   width:inherit;
@@ -104,6 +105,7 @@ $plane-10: LightSkyBlue;
   @include vendor(transform-style, preserve-3d);
   @include animation(infinite-spinning, 4s, linear, infinite);
 }
+
 .pyramid div {
   position: absolute;
   top: 50%;
@@ -165,6 +167,7 @@ $plane-10: LightSkyBlue;
   height:1%;
   background-color: $plane-10;
 }
+
 .pyramid {
   &:hover,
   &:hover div {
