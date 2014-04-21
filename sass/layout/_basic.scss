@@ -1,15 +1,16 @@
 // variables
-$grey-light: LightGrey;
-$blue: Blue;
-$blue-1: MidnightBlue;
-$blue-2: Navy;
-$blue-3: DarkBlue;
-$blue-4: MediumBlue;
-$blue-5: RoyalBlue;
-$blue-6: DodgerBlue;
-$blue-7: CornflowerBlue;
-$blue-8: DeepSkyBlue;
-$blue-9: LightSkyBlue;
+$background-color: cornsilk;
+
+$plane-1: MidnightBlue;
+$plane-2: Navy;
+$plane-3: DarkBlue;
+$plane-4: MediumBlue;
+$plane-5: Blue;
+$plane-6: RoyalBlue;
+$plane-7: DodgerBlue;
+$plane-8: CornflowerBlue;
+$plane-9: DeepSkyBlue;
+$plane-10: LightSkyBlue;
 
 // mixins
 @mixin vendor($property, $value) {
@@ -27,17 +28,6 @@ $blue-9: LightSkyBlue;
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-
-@mixin clearfix() {
-  &:before,
-  &:after {
-    content: "";
-    display: table;
-  }
-  &:after {
-    clear: both;
-  }
 }
 
 @mixin keyframe ($animation_name) {
@@ -58,52 +48,19 @@ $blue-9: LightSkyBlue;
   }
 }
 
-@mixin animation ($delay, $duration, $animation) {
-  -webkit-animation-delay: $delay;
-  -webkit-animation-duration: $duration;
-  -webkit-animation-name: $animation;
-  -webkit-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
-
-  -moz-animation-delay: $delay;
-  -moz-animation-duration: $duration;
-  -moz-animation-name: $animation;
-  -moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
-
-  -o-animation-delay: $delay;
-  -o-animation-duration: $duration;
-  -o-animation-name: $animation;
-  -o-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
-
-  animation-delay: $delay;
-  animation-duration: $duration;
-  animation-name: $animation;
-  animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+@mixin animation($name, $duration: 1000ms, $iterations: infinite, $timing-function: ease, $delay: 0ms) {
+  -webkit-animation: $name $duration $iterations $timing-function $delay;
+  -moz-animation: $name $duration $iterations $timing-function $delay;
+  -o-animation: $name $duration $iterations $timing-function $delay;
+  animation: $name $duration $iterations $timing-function $delay;
 }
 /* ---------- */
 
 
 .no-scroll {
   overflow: hidden;
-  background-color: $grey-light;
+  background-color: $background-color;
   @include fontsize(12);
-}
-
-@include keyframe(radius-animation) {
-  0% {
-    border-radius:0%;
-  }
-  25% {
-    background-color: Gold;
-  }
-  50% {
-    border-radius:25%;
-  }
-  75% {
-    background-color: LimeGreen;
-  }
-  100% {
-    border-radius:0%;
-  }
 }
 
 @include keyframe(radius-animation) {
@@ -126,10 +83,10 @@ $blue-9: LightSkyBlue;
 
 @include keyframe(infinite-spinning) {
   from {
-    transform: rotateY(0deg);
+    @include vendor(transform, rotateY(0deg));
   }
   to {
-    transform: rotateY(180deg);
+    @include vendor(transform, rotateY(180deg));
   }
 }
 
@@ -140,89 +97,85 @@ $blue-9: LightSkyBlue;
   margin-top:-250px;
   @include vendor(perspective, 600px);
 }
+
 .pyramid {
   position:relative;
   width:inherit;
   height:inherit;
   @include vendor(transform-style, preserve-3d);
-  -webkit-animation: infinite-spinning 4s linear infinite;
-  -moz-animation: infinite-spinning 4s linear infinite;
-  animation: infinite-spinning 4s linear infinite;
+  @include animation(infinite-spinning, 4s, linear, infinite);
 }
+
 .pyramid div {
   position: absolute;
   top: 50%;
   left: 50%;
   opacity:.7;
   border:2px solid silver;
-  -webkit-transform: rotateX(90deg) translate3d(-50%, 0, -70px);
-  transform: rotateX(90deg) translate3d(-50%, 0, -70px);
-  -webkit-backface-visibility:hidden;
-  backface-visibility:hidden;
-  -webkit-animation: radius-animation 9s linear infinite;
-  -moz-animation: radius-animation 9s linear infinite;
-  animation: radius-animation 9s linear infinite;
+  @include vendor(transform, rotateX(90deg) translate3d(-50%, 0, -70px));
+  @include vendor(backface-visibility, hidden);
+  @include animation(radius-animation, 9s, linear, infinite);
 }
 
 .pyramid div:nth-child(1) {
   width:90%;
   height:90%;
-  background-color: $blue-1;
+  background-color: $plane-1;
 }
 .pyramid div:nth-child(2) {
   width:80%;
   height:80%;
-  background-color: $blue-2;
+  background-color: $plane-2;
 }
 .pyramid div:nth-child(3) {
   width:70%;
   height:70%;
-  background-color: $blue-3;
+  background-color: $plane-3;
 }
 .pyramid div:nth-child(4) {
   width:60%;
   height:60%;
-  background-color: $blue-4;
+  background-color: $plane-4;
 }
 .pyramid div:nth-child(5) {
   width:50%;
   height:50%;
-  background-color: $blue;
+  background-color: $plane-5;
 }
 .pyramid div:nth-child(6) {
   width:40%;
   height:40%;
-  background-color: $blue-5;
+  background-color: $plane-6;
 }
 .pyramid div:nth-child(7) {
   width:30%;
   height:30%;
-  background-color: $blue-6;
+  background-color: $plane-7;
 }
 .pyramid div:nth-child(8) {
   width:20%;
   height:20%;
-  background-color: $blue-7;
+  background-color: $plane-8;
 }
 .pyramid div:nth-child(9) {
   width:10%;
   height:10%;
-  background-color: $blue-8;
+  background-color: $plane-9;
 }
 .pyramid div:nth-child(10) {
   width:1%;
   height:1%;
-  background-color: $blue-9;
+  background-color: $plane-10;
 }
-.pyramid:hover,
-.pyramid:hover div {
-  -moz-animation-play-state: paused;
-  -webkit-animation-play-state: paused;
-  animation-play-state: paused;
-}
-.pyramid:active,
-.pyramid:active div {
-  -moz-animation-direction: reverse;
-  -webkit-animation-direction: reverse;
-  animation-direction: reverse;
+
+.pyramid {
+  &:hover,
+  &:hover div {
+    @include vendor(animation-play-state, paused);
+  }
+
+  &:active,
+  &:active div {
+    @include vendor(animation-direction, reverse);
+  }
 }
