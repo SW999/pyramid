@@ -1,0 +1,228 @@
+// variables
+$grey-light: LightGrey;
+$blue: Blue;
+$blue-1: MidnightBlue;
+$blue-2: Navy;
+$blue-3: DarkBlue;
+$blue-4: MediumBlue;
+$blue-5: RoyalBlue;
+$blue-6: DodgerBlue;
+$blue-7: CornflowerBlue;
+$blue-8: DeepSkyBlue;
+$blue-9: LightSkyBlue;
+
+// mixins
+@mixin vendor($property, $value) {
+  @each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
+    #{$prefix}#{$property}: $value;
+  }
+}
+
+@mixin fontsize($size: 24, $base: 16) {
+  font-size: $size + px;
+  font-size: ($size / $base) * 1rem;
+}
+
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin keyframe ($animation_name) {
+  @-webkit-keyframes $animation_name {
+    @content;
+  }
+
+  @-moz-keyframes $animation_name {
+    @content;
+  }
+
+  @-o-keyframes $animation_name {
+    @content;
+  }
+
+  @keyframes $animation_name {
+    @content;
+  }
+}
+
+@mixin animation ($delay, $duration, $animation) {
+  -webkit-animation-delay: $delay;
+  -webkit-animation-duration: $duration;
+  -webkit-animation-name: $animation;
+  -webkit-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+  -moz-animation-delay: $delay;
+  -moz-animation-duration: $duration;
+  -moz-animation-name: $animation;
+  -moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+  -o-animation-delay: $delay;
+  -o-animation-duration: $duration;
+  -o-animation-name: $animation;
+  -o-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-name: $animation;
+  animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+}
+/* ---------- */
+
+
+.no-scroll {
+  overflow: hidden;
+  background-color: $grey-light;
+  @include fontsize(12);
+}
+
+@include keyframe(radius-animation) {
+  0% {
+    border-radius:0%;
+  }
+  25% {
+    background-color: Gold;
+  }
+  50% {
+    border-radius:25%;
+  }
+  75% {
+    background-color: LimeGreen;
+  }
+  100% {
+    border-radius:0%;
+  }
+}
+
+@include keyframe(radius-animation) {
+  0% {
+    border-radius:0%;
+  }
+  25% {
+    background-color: Gold;
+  }
+  50% {
+    border-radius:25%;
+  }
+  75% {
+    background-color: LimeGreen;
+  }
+  100% {
+    border-radius:0%;
+  }
+}
+
+@include keyframe(infinite-spinning) {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(180deg);
+  }
+}
+
+.scene {
+  @include center-block;
+  width:600px;
+  height:600px;
+  margin-top:-250px;
+  @include vendor(perspective, 600px);
+}
+.pyramid {
+  position:relative;
+  width:inherit;
+  height:inherit;
+  @include vendor(transform-style, preserve-3d);
+  -webkit-animation: infinite-spinning 4s linear infinite;
+  -moz-animation: infinite-spinning 4s linear infinite;
+  animation: infinite-spinning 4s linear infinite;
+}
+.pyramid div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity:.7;
+  border:2px solid silver;
+  -webkit-transform: rotateX(90deg) translate3d(-50%, 0, -70px);
+  transform: rotateX(90deg) translate3d(-50%, 0, -70px);
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  -webkit-animation: radius-animation 9s linear infinite;
+  -moz-animation: radius-animation 9s linear infinite;
+  animation: radius-animation 9s linear infinite;
+}
+
+.pyramid div:nth-child(1) {
+  width:90%;
+  height:90%;
+  background-color: $blue-1;
+}
+.pyramid div:nth-child(2) {
+  width:80%;
+  height:80%;
+  background-color: $blue-2;
+}
+.pyramid div:nth-child(3) {
+  width:70%;
+  height:70%;
+  background-color: $blue-3;
+}
+.pyramid div:nth-child(4) {
+  width:60%;
+  height:60%;
+  background-color: $blue-4;
+}
+.pyramid div:nth-child(5) {
+  width:50%;
+  height:50%;
+  background-color: $blue;
+}
+.pyramid div:nth-child(6) {
+  width:40%;
+  height:40%;
+  background-color: $blue-5;
+}
+.pyramid div:nth-child(7) {
+  width:30%;
+  height:30%;
+  background-color: $blue-6;
+}
+.pyramid div:nth-child(8) {
+  width:20%;
+  height:20%;
+  background-color: $blue-7;
+}
+.pyramid div:nth-child(9) {
+  width:10%;
+  height:10%;
+  background-color: $blue-8;
+}
+.pyramid div:nth-child(10) {
+  width:1%;
+  height:1%;
+  background-color: $blue-9;
+}
+.pyramid:hover,
+.pyramid:hover div {
+  -moz-animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+.pyramid:active,
+.pyramid:active div {
+  -moz-animation-direction: reverse;
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+}
