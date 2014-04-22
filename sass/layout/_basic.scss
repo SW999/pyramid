@@ -12,6 +12,10 @@ $plane-8: CornflowerBlue;
 $plane-9: DeepSkyBlue;
 $plane-10: LightSkyBlue;
 
+$plane-border-color: silver;
+$plane-color-25: Gold;
+$plane-color-75: LimeGreen;
+
 // mixins
 @mixin vendor($property, $value) {
   @each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
@@ -68,13 +72,13 @@ $plane-10: LightSkyBlue;
     border-radius:0%;
   }
   25% {
-    background-color: Gold;
+    background-color: $plane-color-25;
   }
   50% {
     border-radius:25%;
   }
   75% {
-    background-color: LimeGreen;
+    background-color: $plane-color-75;
   }
   100% {
     border-radius:0%;
@@ -111,71 +115,33 @@ $plane-10: LightSkyBlue;
   top: 50%;
   left: 50%;
   opacity:.7;
-  border:2px solid silver;
+  border:2px solid $plane-border-color;
   @include vendor(transform, rotateX(90deg) translate3d(-50%, 0, -70px));
   @include vendor(backface-visibility, hidden);
   @include animation(radius-animation, 9s, linear, infinite);
-}
 
-.pyramid div:nth-child(1) {
-  width:90%;
-  height:90%;
-  background-color: $plane-1;
-}
-.pyramid div:nth-child(2) {
-  width:80%;
-  height:80%;
-  background-color: $plane-2;
-}
-.pyramid div:nth-child(3) {
-  width:70%;
-  height:70%;
-  background-color: $plane-3;
-}
-.pyramid div:nth-child(4) {
-  width:60%;
-  height:60%;
-  background-color: $plane-4;
-}
-.pyramid div:nth-child(5) {
-  width:50%;
-  height:50%;
-  background-color: $plane-5;
-}
-.pyramid div:nth-child(6) {
-  width:40%;
-  height:40%;
-  background-color: $plane-6;
-}
-.pyramid div:nth-child(7) {
-  width:30%;
-  height:30%;
-  background-color: $plane-7;
-}
-.pyramid div:nth-child(8) {
-  width:20%;
-  height:20%;
-  background-color: $plane-8;
-}
-.pyramid div:nth-child(9) {
-  width:10%;
-  height:10%;
-  background-color: $plane-9;
-}
-.pyramid div:nth-child(10) {
-  width:1%;
-  height:1%;
-  background-color: $plane-10;
+  @for $i from 1 through 10 {
+    &:nth-child(#{$i}) {
+      $temp: 100% - 10*$i;
+      $color: $plane-1, $plane-2, $plane-3, $plane-4, $plane-5, $plane-6, $plane-7, $plane-8, $plane-9, $plane-10;
+      @if $temp <= 0 { $temp: 1%}
+      width: $temp;
+      height: $temp;
+      background-color: nth($color, $i);
+    }
+  }
 }
 
 .pyramid {
   &:hover,
   &:hover div {
     @include vendor(animation-play-state, paused);
+    cursor:pointer;
   }
 
   &:active,
   &:active div {
     @include vendor(animation-direction, reverse);
+    cursor:pointer;
   }
 }
