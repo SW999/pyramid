@@ -106,6 +106,7 @@ $plane-color-75: LimeGreen;
   position:relative;
   width:inherit;
   height:inherit;
+  transform: translateZ(0);
   @include vendor(transform-style, preserve-3d);
   @include animation(infinite-spinning, 4s, linear, infinite);
 }
